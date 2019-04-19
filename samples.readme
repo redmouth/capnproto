@@ -1,0 +1,12 @@
+on project top directory
+
+$ mkdir build
+$ cd build
+$ cmake ../c++ -DCMAKE_INSTALL_PREFIX=../install
+$ cmake --build . --target install
+
+$ cd ../
+$ mkdir build-samples
+$ cd build-samples
+$ cmake ../c++/samples -DCMAKE_PREFIX_PATH=/Users/keliu/project/serialization/capnproto/install/lib/cmake/CapnProto
+$ cmake --build .
